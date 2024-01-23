@@ -1,5 +1,7 @@
-![](https://cdn.discordapp.com/attachments/824763081774071831/1199326764531449856/standard_3.gif)
 
+<div align="center">
+  <img src="[URL_OF_YOUR_GIF](https://cdn.discordapp.com/attachments/824763081774071831/1199326764531449856/standard_3.gif)" alt=""/>
+</div>
 
 # Welcome to ByteWars
 An innovative AI-powered coding platform where learning meets competition. ByteWars offers a unique blend of educational resources and competitive challenges designed to sharpen your coding skills. Tailored for both beginners and advanced coders, our AI-driven system ensures a personalized learning journey.
