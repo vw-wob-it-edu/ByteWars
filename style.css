@@ -1,0 +1,108 @@
+body {
+    font-family: 'Consolas', 'Monaco', monospace; /* VSCode-like font */
+    background-color: #1e1e1e; /* Dark background */
+    color: #d4d4d4; /* Light text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #252526; /* VSCode-like panel background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text-area {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+
+.code-input {
+    width: 100%;
+    height: 150px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    color: #d4d4d4;
+    padding: 10px;
+    resize: none; /* Disable resizing */
+    outline: none; /* Remove outline on focus */
+}
+
+.code-input:focus {
+    box-shadow: 0 0 5px #007acc; /* Focus effect */
+}
+.editor {
+    display: flex;
+    border: 1px solid #ddd; /* optional border */
+    overflow: auto; /* enables scrolling */
+}
+
+.line-numbers {
+    color: #858585;
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: right;
+    user-select: none;
+    white-space: pre; /* ensures line breaks are respected */
+    min-width: 50px; /* adjust as needed */
+}
+
+.code-input {
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    border: none;
+    color: #d4d4d4;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    overflow-y: hidden; /* hides vertical scrollbar */
+    white-space: pre; /* respects new lines and spaces */
+}
+
+.info-container {
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #252526; /* Similar to the editor's background */
+    color: #d4d4d4; /* Light text for readability */
+    border-radius: 5px;
+}
+
+.button-container {
+    text-align: center; /* Center-aligns inline or inline-block elements within the container */
+    margin-top: 20px; /* Optional, adds some space above the button */
+}
+
+Button{
+    background-color: #6e6c6c; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Vertical and horizontal padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px #181414; /* Simple box shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+button:active {
+    background-color: #3e8e41; /* Even darker shade when pressed */
+    box-shadow: 0 2px #666; /* Adjust shadow to look like button is pressed */
+    transform: translateY(2px); /* Slight downward movement on click */
+}
