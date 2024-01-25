@@ -9,8 +9,23 @@ body {
     align-items: center;
     height: 100vh;
 }
+body::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(50, 48, 48); /* Track color (lady lips color) */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b7b7b76f; /* Thumb color (lady lips color) */
+}
 
 .container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
     max-width: 800px;
     background-color: #252526; /* VSCode-like panel background */
@@ -18,24 +33,14 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-.text-area {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #1e1e1e;
-    border-radius: 5px;
-}
-
-.code-input {
+.container::after {
+    content: ''; /* Add an empty content */
+    display: block;
+    position: absolute; /* Position the pseudo-element absolutely */
+    left: 0;
+    bottom: -75px; /* Adjust as needed for the desired space */
     width: 100%;
-    height: 150px;
-    background-color: #1e1e1e;
-    border: none;
-    border-radius: 5px;
-    color: #d4d4d4;
-    padding: 10px;
-    resize: none; /* Disable resizing */
-    outline: none; /* Remove outline on focus */
+    height: 10px; /* Adjust as needed for the desired space */
 }
 
 .code-input:focus {
@@ -55,6 +60,7 @@ body {
     user-select: none;
     white-space: pre; /* ensures line breaks are respected */
     min-width: 50px; /* adjust as needed */
+    font-size: 16px; /* set the desired font size */
 }
 
 .code-input {
@@ -67,7 +73,10 @@ body {
     outline: none;
     overflow-y: hidden; /* hides vertical scrollbar */
     white-space: pre; /* respects new lines and spaces */
+    font-size: 16px; /* set the same font size as line numbers */
 }
+
+
 
 .info-container {
     margin: 10px 20px;
@@ -105,4 +114,9 @@ button:active {
     background-color: #3e8e41; /* Even darker shade when pressed */
     box-shadow: 0 2px #666; /* Adjust shadow to look like button is pressed */
     transform: translateY(2px); /* Slight downward movement on click */
+}
+
+
+.space-below {
+    height: 500px; /* Adjust as needed for the desired space */
 }

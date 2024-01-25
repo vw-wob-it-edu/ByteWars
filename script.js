@@ -23,3 +23,16 @@ function Indentation(event) {
 }
 document.getElementById('codeInput').addEventListener('keydown', Indentation);
 updateLineNumbers();
+
+
+function getUserCode() {
+    var textInput = document.getElementById("codeInput");
+    var textContent = textInput.value;
+
+    alert(textContent);
+}
+
+var submitButton = document.querySelector('.button-container button');
+submitButton.addEventListener('click', getUserCode);
+
+
