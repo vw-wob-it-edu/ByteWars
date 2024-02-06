@@ -1,0 +1,38 @@
+/* WelcomeAnimation.css */
+.welcome-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Adjust based on how you want to position it on the page */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .welcome-text {
+    font-size: 4rem;
+    animation: fadeInUp 1s ease-in-out forwards;
+    margin: 0 auto;
+  }
+  
+  .byte {
+    color: #ffffff; /* White color for "Byte" */
+  }
+  
+  .wars {
+    color: #00ddff; /* Blue color for "Wars" */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-180px);
+    }
+  }
+  

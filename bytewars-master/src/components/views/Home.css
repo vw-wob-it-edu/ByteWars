@@ -1,0 +1,57 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202124;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    font-size: 4rem;
+    animation: fadeInUp 3s ease-in-out forwards; /* Use 'forwards' to retain the final state of the animation */
+  }
+  
+  
+  .byte {
+    color: #ffffff; /* White color for "Byte" */
+  }
+  
+  .wars {
+    color: #00ddff; /* Blue color for "Wars", you can adjust the shade of blue as needed */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start below the final position */
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0); /* Move to final position */
+    }
+    100% {
+      transform: translateY(-300px); /* Move up a little */
+    }
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    gap: 5px; /* Add space between the welcome text and the card */
+  }
+
+  .cards-container {
+    display: flex; /* Align children (cards) in a row */
+    justify-content: center; /* Center the cards container */
+    gap: 20px; /* Space between each card */
+  }
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .cards-container {
+      flex-direction: column; /* Stack cards vertically on small screens */
+    }
+  }
+  

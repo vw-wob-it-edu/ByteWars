@@ -1,0 +1,9 @@
+.text-container {
+    background-color: #333; /* Dark background that fits the theme */
+    color: #fff; /* Light text for contrast */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; /* Some margin to separate it from other content */
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75); /* Optional shadow for effect */
+  }
+  

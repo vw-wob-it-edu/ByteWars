@@ -1,0 +1,50 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #ffffff; /* Assuming you've added an outline from before */
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75); /* Optional shadow for effect */
+    border-radius: 15px; /* Rounded edges */
+  }
+  
+  
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    padding: 0 10px;
+  }
+  
+  .navbar-links {
+    text-decoration: none; /* Removes the underline from links */
+    color: #ffffff; /* Sets the text color; adjust as needed */
+    background-color: #333; /* Sets the background color of the button; adjust as needed */
+    padding: 15px 30px; /* Adds some padding around the text */
+    border-radius: 5px; /* Gives the button rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+  .navbar-links:hover {
+    background-color: #00ddff; /* Changes background color on hover to aquamarine */
+  }
+  
+  
+  .navbar-logo {
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the text bold */
+  }
+  
+  .logo-byte {
+    color: #ffffff; /* Sets the "Byte" part to white */
+  }
+  
+  .logo-wars {
+    color: #00ddff; /* Sets the "Wars" part to aquamarine; you can adjust the shade if needed */
+  }
+  
+  
