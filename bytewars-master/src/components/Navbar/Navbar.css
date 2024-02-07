@@ -6,20 +6,20 @@
   border: 1px solid #4d4d4d; /* Assuming you've added an outline from before */
   border-radius: 15px; /* Rounded edges */
 }
-
+ 
 .no-bullet {
   list-style-type: none; /* This removes the bullet point */
 }
-
+ 
 .navbar-menu {
   list-style: none;
   display: flex;
 }
-
+ 
 .navbar-item {
   padding: 0 10px;
 }
-
+ 
 .navbar-links {
   text-decoration: none; /* Removes the underline from links */
   color: #ffffff; /* Sets the text color; adjust as needed */
@@ -28,27 +28,49 @@
   border-radius: 5px; /* Gives the button rounded corners */
   transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
 }
-
+ 
 .navbar-links:hover {
   background-color: #6c6c6c; /* Changes background color on hover to aquamarine */
 }
-
+ 
 .navbar-links.active {
   background-color: #00ddff; /* Sets the background color of the active link to aquamarine */
   /* Add any additional styling you want for the active link here */
 }
-
-
+ 
+.navbar-coding-links {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00ddff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+ 
+.navbar-coding-links:hover {
+  background-color: #00ddff; /* Change background color to green on hover */
+}
+ 
+.navbar-coding-links.active {
+  background-color: #00ddff;
+}
+ 
 .navbar-logo {
   text-decoration: none; /* Removes underline from the link */
   font-size: 1.5rem; /* Adjust size as needed */
   font-weight: bold; /* Makes the text bold */
 }
-
+ 
 .logo-byte {
   color: #ffffff; /* Sets the "Byte" part to white */
 }
-
+ 
 .logo-wars {
   color: #00ddff; /* Sets the "Wars" part to aquamarine; you can adjust the shade if needed */
+}
+ 
+.navbar-coding {
+  position: fixed; /* Set position to absolute */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
 }

@@ -15,10 +15,10 @@ function Navbar() {
         </a>
         <ul className="navbar-coding">
         <li className="navbar-item no-bullet">
-              <a href="/" className={`navbar-links ${isActive('/') ? 'active' : ''}`}>
+            <a href="/" className={`navbar-coding-links ${isActive('/') ? 'active' : ''}`}>
               &lt;Coding Area/&gt;
-              </a>
-            </li>
+            </a>
+          </li>
           </ul>
         <ul className="navbar-menu">
           <li className="navbar-item">
