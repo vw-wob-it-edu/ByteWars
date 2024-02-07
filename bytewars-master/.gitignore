@@ -4,7 +4,7 @@
 *.pack.old
 *.eslintcache
 *.old
-/.cache
+/node_modules/.cache
 # dependencies
 /node_modules
 /.pnp

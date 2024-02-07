@@ -10,11 +10,11 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar-container">
-        <a href="#home" className="navbar-logo">
+        <a href="/" className="navbar-logo">
           <span className="logo-byte">Byte</span><span className="logo-wars">Wars</span>
         </a>
         <ul className="navbar-coding">
-          <li className="navbar-item">
+        <li className="navbar-item">
               <a href="/" className={`navbar-links ${isActive('/') ? 'active' : ''}`}>
               &lt;Coding Area/&gt;
               </a>
