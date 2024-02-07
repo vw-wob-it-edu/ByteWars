@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css'; 
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Practice from './components/views/practice';
-import Home from './components/views/Home';
-import AuthPage from './components/AuthPage/AuthPage';
+import Practice from './components/views/practice/practice';
+import Home from './components/views/Home/Home';
+import AuthPage from './components/views/LoginPage/login';
 function App() {
   
   return (

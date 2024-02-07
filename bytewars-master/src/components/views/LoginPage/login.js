@@ -1,5 +1,5 @@
 import React from 'react';
-import './AuthPage.css'; 
+import './login.css'; 
 
 function AuthPage() {
 

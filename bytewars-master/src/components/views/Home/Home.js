@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
-import WelcomeAnimation from '../WelcomeAnimation/WelcomeAnimation';
-import Card from '../Card/Card';
+import WelcomeAnimation from '../../WelcomeAnimation/WelcomeAnimation';
+import Card from '../../Card/Card';
 
 function Home() {
     return (
