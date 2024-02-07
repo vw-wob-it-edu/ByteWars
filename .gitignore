@@ -9,6 +9,7 @@ bytewars-master/node_modules/.cache/default-development/1.pack
 *.pack.old
 *.eslintcache
 *.old
+/.cache
 # dependencies
 /node_modules
 /.pnp
