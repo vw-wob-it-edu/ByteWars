@@ -9,7 +9,7 @@ function Practice() {
     return (
         
         <div className="Practice">
-        <Timer/>
+        <Timer countUp={true} initialTime="00:00:00" />
         <TextContainer />
         <CodingSpace />
         <SubmitButton />

@@ -1,24 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import moment from 'moment';
 
-function Timer({ initialSeconds }) {
-  const [seconds, setSeconds] = useState(initialSeconds);
+function Timer({ countUp, initialTime }) {
+  // Parse initialTime and convert it to seconds
+  const initialSeconds = moment.duration(initialTime).asSeconds();
+  const [time, setTime] = useState(initialSeconds);
 
   useEffect(() => {
-    // Check if the timer is active
-    if (seconds > 0) {
-      // Set a timeout to decrease the seconds by 1 every 1000ms (1 second)
-      const timerId = setTimeout(() => {
-        setSeconds(seconds - 1);
-      }, 1000);
+    const interval = setInterval(() => {
+      setTime((prevTime) => {
+        // If counting up, just increment. No need to stop.
+        if (countUp) {
+          return prevTime + 1;
+        }
+        // If counting down, decrement and stop at 0.
+        else {
+          if (prevTime <= 0) {
+            clearInterval(interval);
+            return 0;
+          }
+          return prevTime - 1;
+        }
+      });
+    }, 1000);
 
-      // Clear the timeout if the component is unmounted or the timer reaches 0
-      return () => clearTimeout(timerId);
-    }
-  }, [seconds]);
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
+  }, [countUp]);
+
+  // Format the time using moment.js
+  const formattedTime = moment.utc(moment.duration(time, 'seconds').asMilliseconds()).format('HH:mm:ss');
 
   return (
     <div>
-      <h2>Timer: {seconds} Seconds</h2>
+      <h2>Timer: {formattedTime}</h2>
     </div>
   );
 }
