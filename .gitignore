@@ -3,3 +3,30 @@ bytewars-master/node_modules/.cache/.eslintcache
 bytewars-master/node_modules/.cache/default-development/index.pack
 bytewars-master/node_modules/.cache/default-development/index.pack.old
 bytewars-master/node_modules/.cache/default-development/1.pack
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*.pack
+*.pack.old
+*.eslintcache
+*.old
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
