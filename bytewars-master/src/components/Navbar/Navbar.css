@@ -7,7 +7,9 @@
   border-radius: 15px; /* Rounded edges */
 }
 
-
+.no-bullet {
+  list-style-type: none; /* This removes the bullet point */
+}
 
 .navbar-menu {
   list-style: none;

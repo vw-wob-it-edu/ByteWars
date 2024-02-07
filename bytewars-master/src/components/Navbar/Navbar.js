@@ -14,7 +14,7 @@ function Navbar() {
           <span className="logo-byte">Byte</span><span className="logo-wars">Wars</span>
         </a>
         <ul className="navbar-coding">
-        <li className="navbar-item">
+        <li className="navbar-item no-bullet">
               <a href="/" className={`navbar-links ${isActive('/') ? 'active' : ''}`}>
               &lt;Coding Area/&gt;
               </a>
