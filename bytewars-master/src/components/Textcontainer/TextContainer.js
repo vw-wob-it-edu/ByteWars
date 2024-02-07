@@ -5,7 +5,7 @@ function TextContainer() {
   return (
     <div className="text-container">
       {}
-      <p>Coding Exercise</p>
+      <h3>Press Enter to start</h3>
     </div>
   );
 }
