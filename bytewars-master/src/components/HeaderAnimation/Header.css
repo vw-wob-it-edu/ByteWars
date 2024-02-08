@@ -1,0 +1,29 @@
+
+.Header-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Adjust based on how you want to position it on the page */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .Header-text {
+    font-size: 4rem;
+    animation: fadeInUp 1s ease-out forwards;
+    margin: 0 auto;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-180px);
+    }
+  }
+  

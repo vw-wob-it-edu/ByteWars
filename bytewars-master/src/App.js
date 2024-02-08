@@ -6,6 +6,7 @@ import Practice from './components/views/practice/practice';
 import Home from './components/views/Home/Home';
 import AuthPage from './components/views/LoginPage/login';
 import SignUp from './components/views/LoginPage/signUp';
+import ChooseCodingMode from './components/views/Coding/coding';
 function App() {
   
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/auth" element={<AuthPage />} />
             <Route path="/sign-up" element={<SignUp/>}/>
+            <Route path="/coding" element={<ChooseCodingMode/>}/>
             {}
           </Routes>
         </Router>

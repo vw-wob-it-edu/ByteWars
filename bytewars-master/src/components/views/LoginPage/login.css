@@ -6,8 +6,10 @@
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
   font-size: 1.5rem; /* Font size */
-  font-weight: bold; /* Font weight */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:bolder; /* Font weight */
   cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  color: #fff;
   transition: background-color 0.3s, transform 0.2s;
 }
 * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
