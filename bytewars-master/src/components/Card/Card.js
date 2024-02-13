@@ -1,4 +1,3 @@
-// Card.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './Card.css'; 
@@ -16,6 +15,6 @@ function Card({ name, path }) {
         {}
       </div>
     );
-  }
-  
-  export default Card;
+}
+
+export default Card;

@@ -17,7 +17,7 @@ function Navbar() {
 
       <div className="navbar-right">
         <Link to="/leaderboard" className={`right-button ${location.pathname === '/leaderboard' ? 'active' : ''}`}>Leaderboard</Link>
-        <Link to="/auth" className={`right-button ${location.pathname === '/auth' ? 'active' : ''}`}>Login</Link>
+        <Link to="/auth" className={`right-button ${location.pathname === '/auth' || location.pathname === '/sign-up' ? 'active' : ''}`}>Login</Link>
       </div>
     </nav>
   );
