@@ -54,4 +54,8 @@
       flex-direction: column; /* Stack cards vertically on small screens */
     }
   }
+  .headline {
+    font-weight: bold; 
+    font-size: 18px;
+}
   
