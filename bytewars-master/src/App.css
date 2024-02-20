@@ -14,3 +14,23 @@ body {
   color: #ffffff; 
   overflow: hidden;
 }
+
+.footer-links {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: rgb(97, 97, 97); /* Set the default text color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.footer-links a:hover {
+  color: rgb(227, 227, 227); /* Change the text color to blue on hover */
+}
+
+
+

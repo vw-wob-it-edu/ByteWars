@@ -12,7 +12,7 @@ function Navbar() {
       </Link>
 
       <div className="navbar-center">
-        <Link to="/coding" className="coding-button">Coding</Link>
+        <Link to="/coding" className={`coding-button ${location.pathname === '/coding' || location.pathname === '/practice'? 'active' : ''}`}>Coding</Link>
       </div>
 
       <div className="navbar-right">
