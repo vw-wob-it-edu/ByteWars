@@ -1,0 +1,32 @@
+.info-card {
+    border-radius: 10px;
+    background-color: #2a2a2a81;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Set width to 50% */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .info-card h2 {
+    margin-bottom: 10px;
+    color: #e8e8e8;
+  }
+  
+  .info-card p {
+    color: #aeaeae;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .info-card a {
+    color: #aeaeae; /* Grey color */
+    text-decoration: none; /* Remove underline */
+    outline: none; /* Remove outline */
+  }
+  
+  .info-card a:hover {
+    color: #ffffff;
+  }

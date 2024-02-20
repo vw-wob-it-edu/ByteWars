@@ -40,22 +40,22 @@
 	background-color: transparent;
 }
 .leaderboard li:before {
-	counter-increment: number; /* 遞增計數器 */
-	content: counter(number) "."; /* 顯示計數器 */
+	counter-increment: number;
+	content: counter(number) "."; 
 	margin-right: 4px;
 }
 .leaderboard li:nth-child(1) {
-	background: #00ddff;
+	background: #00ddff95;
 }
 .leaderboard li:nth-child(2) {
-	background: #00ddffd4;
+	background: #00ddff7a;
 }
 .leaderboard li:nth-child(3) {
-	background: #00ddffa3;
+	background: #00ddff4a;
 }
 .leaderboard li:nth-child(4) {
-	background: #00ddff5b;
+	background: #00ddff1e;
 }
 .leaderboard li:nth-child(5) {
-	background: #00ddff45;
+	background: #00ddff10;
 }

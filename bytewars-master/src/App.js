@@ -9,6 +9,9 @@ import AuthPage from './components/views/LoginPage/login';
 import SignUp from './components/views/LoginPage/signUp';
 import ChooseCodingMode from './components/views/Coding/coding';
 import LeaderboardPage from './components/views/LeaderboardPage/LeaderboardPage';
+import AboutUs from './components/views/AboutUs/AboutUs';
+import Contact from './components/views/Contact/Contact';
+import SinglePlayer from './components/views/SinglePlayer/SinglePlayer';
 
 function App() {
   const [backendData, setBackendData] = useState([{}])
@@ -37,10 +40,14 @@ function App() {
               <Route path="/sign-up" element={<SignUp/>}/>
               <Route path="/coding" element={<ChooseCodingMode/>}/>
               <Route path="/leaderboard" element={<LeaderboardPage/>}/>
+              <Route path="/aboutus" element={<AboutUs/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/singleplayer" element={<SinglePlayer/>}/>
             </Routes>
             <div className="footer-links">
-              <Link to="/coding" className="impressum-button">Impressum</Link>
-              <Link to="/coding" className="contact-button">Contact</Link>
+              <Link to="/aboutus" className="aboutUs-button">About Us</Link>
+              <Link to="/contact" className="contact-button">Contact</Link>
+              <a href="https://github.com/vw-wob-it-edu/ByteWars" className="contact-button" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </Router>
       </div>
